@@ -1,0 +1,47 @@
+defaults: &defaults
+  
+
+development:
+  <<: *defaults
+  webapp_name: Web App Name
+  webapp_site: http://urlfortheapp.com
+  webapp_domain: localhost.com
+  emails:
+    info_from: from@mail.com
+  
+  smtp_settings:
+    address: smtp.settings
+    port: 25
+    domain: the smtp domain
+    user_name: smtp_user_name
+    password: smtp_password
+    
+test:
+  <<: *defaults
+  webapp_name: Web App Name
+  webapp_site: http://urlfortheapp.com
+  webapp_domain: localhost.com
+  emails:
+    info_from: from@mail.com
+  
+  smtp_settings:
+    address: smtp.settings
+    port: 25
+    domain: the smtp domain
+    user_name: smtp_user_name
+    password: smtp_password
+      
+production:
+  <<: *defaults
+  webapp_name: Web App Name
+  webapp_site: http://urlfortheapp.com
+  webapp_domain: localhost.com
+  emails:
+    info_from: from@mail.com
+  
+  smtp_settings:
+    address: smtp.settings
+    port: 25
+    domain: the smtp domain
+    user_name: smtp_user_name
+    password: smtp_password
