@@ -1,0 +1,324 @@
+/*
+ Design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+ */
+body {
+    margin: 0px;
+    padding: 0px;
+    /*background: #040F12 url(images/img01.jpg) repeat-x left top;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #9DAAB2;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #000000;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+    text-decoration: underline;
+    color: #0D6B82;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #94A4C6;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/** HEADER */
+#header {
+    width: 950px;
+    height: 90px;
+    margin: 0px auto;
+}
+
+/** LOGO */
+#top_search_wrapper {
+    float: left;
+}
+
+#logo {
+    height: 70px;
+    float: left;
+    background: url(images/header_logo.png) no-repeat left top;
+    width: 200px;
+}
+
+#profile {
+    height: 70px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/** MENU */
+#menu {
+    height: 48px;
+}
+
+#menu ul {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+    margin-right: 1px;
+}
+
+#menu a {
+    display: block;
+    height: 28px;
+    padding: 14px 20px 0px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+    background: #000000;
+}
+
+#menu .active {
+    background: #000000;
+}
+
+/* Search */
+#search {
+    float: right;
+    width: 400px;
+    padding: 0px 0px 0px 0px;
+}
+
+#search_menu {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#search form {
+    margin: 0;
+    padding: 15px 0 0 20px;
+}
+
+#search fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#search-text {
+    width: 250px;
+    font: bold 14px Arial, Helvetica, sans-serif;
+}
+
+#search-text:focus {
+}
+
+#search-submit {
+    margin-left: 10px;
+    width: 100px;
+}
+
+/* Page */
+#page {
+    width: 950px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-top: 1px solid #DEDEDE;
+}
+
+/* Content */
+#content {
+    float: left;
+    width: 620px;
+    padding: 0px 0px 0px 0px;
+}
+
+.links {
+    padding-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Sidebar */
+#sidebar {
+    float: right;
+    width: 280px;
+    padding: 2px;
+    color: #054A60;
+    background: #99CC66;
+}
+
+#sidebar ul {
+    padding-left: 20px;
+    list-style: circle;
+}
+
+#sidebar span {
+    padding: 10px;
+}
+
+#sidebar p {
+    margin: 0 0px;
+    text-align: justify;
+}
+
+#sidebar h1 {
+    font-size: 130%;
+}
+
+/* Calendar */
+#calendar {
+}
+
+#calendar_wrap {
+    padding: 20px;
+}
+
+#calendar table {
+    width: 100%;
+}
+
+#calendar tbody td {
+    text-align: center;
+}
+
+#calendar #next {
+    text-align: right;
+}
+
+/** FOOTER */
+#footer-wrapper {
+    background: url(images/img02.jpg) repeat-x left top;
+    height: 250px;
+}
+
+#footer {
+    width: 950px;
+    height: 250px;
+    margin: 0px auto;
+    background: url(images/img03.jpg) no-repeat left top;
+}
+
+#footer p {
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+    color: #133D47;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #133D47;
+}
+
+#footer .legal {
+}
+
+#footer .links {
+}
+
+/**Profile component*/
+ul#session_options {
+    margin-left: 0;
+    padding-left: 0;
+    display: inline;
+}
+
+ul#session_options li {
+    list-style: none;
+    display: inline;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    /*border: 1px solid #000;*/
+}
+
+/**End of Profile component*/
+.form_table {
+}
+
+.form_table td {
+    padding: 5px 15px 10px 0px;
+}
+
+input {
+    width: 250px;
+    padding: 6px 5px 2px 5px;
+    border: 1px solid #DEDEDE;
+    background: #FFFFFF;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+input:focus {
+    background: #EAEAEA;
+    border: 1px solid #b1b1b1;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 4px;
+    border: 1px solid #AEDFFF;
+    background: #4E5FA5;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn:focus {
+    margin-left: 10px;
+    padding: 4px;
+    border: 1px solid #b1b1b1;
+    background: #4E5FA5;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn:active {
+    color: #000;
+}
+#errorExplanation {
+	background:red;
+}
+
+#errorExplanation h2{
+	font-size: 2em;
+}
+
+

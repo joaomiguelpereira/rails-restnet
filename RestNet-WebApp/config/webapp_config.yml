@@ -1,0 +1,41 @@
+development:
+  webapp_name: Web App Name
+  webapp_site: http://jpereira.no-ip.org
+  webapp_domain: localhost.com
+  emails:
+    info_from: info@thewebdawn.net
+  
+  smtp_settings:
+    address: smtp1.servage.net
+    port: 25
+    domain: thewebdawn.net
+    user_name: info@thewebdawn.net
+    password: Planta098=)(
+test:
+  webapp_name: Web App Name
+  webapp_site: http://jpereira.no-ip.org
+  webapp_domain: localhost.com
+  emails:
+    info_from: info@thewebdawn.net
+  
+  smtp_settings:
+    address: smtp1.servage.net
+    port: 25
+    domain: thewebdawn.net
+    user_name: info@thewebdawn.net
+    password: Planta098=)(
+  
+  
+production:
+  webapp_name: Web App Name
+  webapp_site: http://jpereira.no-ip.org
+  webapp_domain: localhost.com
+  emails:
+    info_from: info@thewebdawn.net
+  
+  smtp_settings:
+    address: smtp1.servage.net
+    port: 25
+    domain: thewebdawn.net
+    user_name: info@thewebdawn.net
+    password: Planta098=)(

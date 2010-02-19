@@ -1,0 +1,42 @@
+<%content_for :sidebar_hints do %>
+<p>
+    Para aceder a alguns serviços da nossa app é necessário registar-se.
+</p>
+<p>
+    O registo é rápido e gratuito.
+</p>
+<h1>Algumas vantangens de se registar</h1>
+<ul>
+    <li>
+        vantagem 1
+    </li>
+    <li>
+        vantagem 2
+    </li>
+</ul>
+<%end -%>
+<% form_for(@user,:builder=>TableFormBuilder) do |f| %>
+<%= f.error_messages %>
+<%if facebook_user -%>
+<h1>Registar utilizador do facebook</h1>
+<%else -%>
+<h1>Registar novo utilizador</h1>
+<%end -%>
+<table class="form_table">
+    <%= f.text_field :first_name %>
+    <%= f.text_field :last_name %>
+    <%= f.text_field :email %>
+    <%unless facebook_user -%>
+    <%= f.password_field :password %>
+    <%= f.password_field :password_confirmation %>
+    <%end -%>
+    <tr>
+        <td>
+            &nbsp;
+        </td>
+        <td>
+            <%= f.submit 'Registar', :class=>"btn", :width=>10 %>
+        </td>
+    </tr>
+</table>
+<% end %>

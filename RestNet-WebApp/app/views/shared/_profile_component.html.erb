@@ -1,0 +1,17 @@
+<table>
+    <%if has_session? -%>
+    <tr>
+        <td style="border-bottom: solid 1px" align="right">
+            <%= render :partial => "sessions/session_info", :locals=>{:element_id=>"session_info"} %>
+        </td>
+        <td rowspan="2">
+            <%= render :partial => "sessions/session_picture", :locals=>{:element_id=>"session_picture"} %>
+        </td>
+    </tr>
+    <%end -%>
+    <tr>
+        <td align="right">
+            <%= render :partial => "sessions/session_options" %>
+        </td>
+    </tr>
+</table>
