@@ -1,0 +1,13 @@
+%h1 Home#index
+%p Find me in app/views/home/index.html.erb"
+%p= link_to 'Create User', new_user_path
+%h1 Web App Configuration
+%p== Environment: #{Rails.env} 
+  
+%p== Web App Name: #{WEBAPP_CONFIG["webapp_name"]}
+%p== Web App Site: #{WEBAPP_CONFIG["webapp_site"] }
+
+%p== Web App Domain #{WEBAPP_CONFIG["webapp_domain"]}
+%p== Setting: #{WEBAPP_CONFIG["smtp_settings"]["address"]}
+
+%p== cookies #{cookies[WebappConstants::AUTO_LOGIN_COOKIE_NAME]}
