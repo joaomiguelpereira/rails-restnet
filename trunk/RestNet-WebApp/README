@@ -1,3 +1,13 @@
+==Welcome to RestNet
+
+1 - Copy facebooker.yml.sample to facebooker.yml and change to your settings
+2 - Copy webapp_config.yml.sample to webapp.yml and change to your settings
+3 - Copy database.yml.sample to database.yml and change to your settings
+
+Note: I have facebooker.yml, webapp_config.yml and database.yml in my svn:ignore
+4 - If you don't have HAML installed, then install it. Don't forget to install the plugin after the gem. 
+  Check here: http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html
+============================================================
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create 
