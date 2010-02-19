@@ -1,0 +1,81 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+
+
+david:
+  #thepassword
+  handle: david
+  first_name: David
+  last_name: Smith
+  email: joaomiguel.pereira@gmail.com
+  hashed_password: 2ab803e9aa9cb424ac92d660ebca3dc2e23c38e5
+  salt: 460699401258672968
+  active: false
+  activation_key: 1324354657586897070
+  fb_uid: 0
+  admin: false
+  
+steve:
+  handle: steve
+  first_name: Steve
+  last_name: Jonhson
+  email: jonhy.pear@gmail.com
+  hashed_password: MyString
+  salt: MyString
+  active: false
+  activation_key: 11111
+  fb_uid: 0
+  admin: false
+    
+aoonis:
+  #password 132435
+  handle: aoonis
+  first_name: Aoonis
+  last_name: Wait
+  email: aoonismail@gmail.com
+  hashed_password: d2534b19f98e2a42fd86dc50657f87f98d6a5208
+  salt: 394082501259367549
+  activation_key: 2c7b5319680dc9d8130e31b8a79d2e7080717a09
+  active: true
+  fb_uid: 0
+  
+
+aoonis_fb:
+  #password 132435
+  handle: aoonisfb
+  first_name: Aoonis
+  last_name: Wait
+  email: aoonismailfb@gmail.com
+  hashed_password: 
+  salt: 
+  activation_key: 
+  active: true
+  fb_uid: 142526263636
+  admin: false
+  
+aoonis_inactive:
+  #password 132435
+  
+  handle: aoonis2
+  first_name: Aoonis
+  last_name: Whatever
+  email: aoonismail_other@gmail.com
+  hashed_password: d2534b19f98e2a42fd86dc50657f87f98d6a5208
+  salt: 394082501259367549
+  activation_key: 2c7b5319680dc9d8130e31b8a79d2e7080717a09
+  active: false
+  fb_uid: 0
+  admin: false
+
+admin:
+  #password 132435
+  handle: admin
+  first_name: Super
+  last_name: Admin
+  email: admin@gmail.com
+  hashed_password: d2534b19f98e2a42fd86dc50657f87f98d6a5208
+  salt: 394082501259367549
+  activation_key: 2c7b5319680dc9d8130e31b8a79d2e7080717a09
+  active: true
+  fb_uid: 
+  admin: true

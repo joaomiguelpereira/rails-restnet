@@ -1,0 +1,22 @@
+<h1>Login</h1>
+<% form_tag :action=>"create", :method=>:post do %>
+<p>    
+	<%=label_tag :handle_or_email, "Email ou identificador"%>
+</p>
+<p>
+    <%=text_field_tag :handle_or_email, @handle_or_email %>
+</p>
+<p>
+    <%=label_tag :password, "Password"%>
+</p>
+<%=password_field_tag :password, @password %>
+</p>
+<p>
+    <%=check_box_tag :keep_me_logged, "1", @keep_me_logged %>
+	<%=label_tag :keep_me_logged, "Keep me logged in"%>
+</p>
+
+<%=submit_tag "Autenticar"%>
+<%end %>
+<p><%=link_to "Recuperar password", :controller=>:users, :action=>:recover_password%></p>
+<%= render :partial=>"shared/fbconnect_button"%>

@@ -1,0 +1,56 @@
+pt:
+
+  recover_password_instructions_sent: "As instruções para recuperar a password foram enviadas para %s"
+  user_created_confirmation_sent: "O utilizador %s foi criado. Foi enviada a confimação para %s"
+  activate_account_email_subject: "Por favor active a sua conta"
+  invalid_activation_key_error: "A chave de activação é inválida"
+  user_already_active_error: "O utilizador já está activo"
+  user_activated_success_message: "O utilizador encontra-se agora activo. Login"
+  invalid_login_name_or_email: "O nome ou email do utilizador não foi encontrado"
+  login_successfull: "A sessão foi iniciada com sucesso!"
+  wrong_password: "A password está incorrecta!"
+  user_not_activated_yet: "A conta do utilizador ainda não está activa!"
+  no_such_session_error: "Não existe nenhuma sessão activa!"
+  session_destroyed: "A sessão foi encerrada com sucesso"
+  user_session_exists: "Já existe uma sessão activa. Encerre a sessão."
+  user_not_found: "O utilizador não existe"
+  recover_password_email_subject: "Instruções para recuperar password"
+  reset_password_invalid_key: "Não é possível recuperar a password."
+  invalid_request: "O pedido não foi entendido"
+  password_dont_match: "As passwords não coincidem"
+  invalid_password: "A password não é válida. Minimo 5 caracteres. Max 150"
+  password_changed_successfully: "A password foi mudada com sucesso"
+  could_not_connect_to_fb: "Não foi possivel ligar-se ao Facebook"
+  fb_user_not_authenticable_message: "O utilizador %s é um utilizador Facebook. Use o facebook para iniciar a sessão"
+  not_allowed: "Não está autorizado a fazer esta operação"
+  user_removed: "Utilizador removido"
+  user_data_updated: "Os dados do Utilizador foram actualizados!"
+  user_data_not_updated: "Não foi possível actualizar os dados do utilizador!"
+  password_not_changeable_for_facebook_user: "Não é possível mudar password para um utilizador Facebook"
+  
+  
+#Custom messages
+  activerecord:
+    models:
+      user: Utilizador
+    errors:
+      models:
+        user:
+          attributes:
+            handle:
+              :handle_invalid_format: "tem um formato inválido"
+            password:
+              missing_password: "não pode estar em branco"
+            email:
+              email_invalid: "não é válido"
+            terms:
+              accept_terms: "tem se ser aceites"
+    attributes:
+      user:
+        handle: "Identificador"
+        first_name: "Primeiro Nome"
+        last_name: "Último Nome"
+        password_confirmation: "Confirmação da Palavra Passe"
+        terms: "Termos e condições"
+        email: "Endereço Electrónico"
+        password: "Palavra Passe"

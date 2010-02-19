@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+
+david:
+  user_id: 100
+  key: PdqLmDTAl/PYn3c+UFCQ0O/tozEaTVawLWSK5unoxaGa8f2DYIiLUbJcVTisBIWzCbFleGtsaBpc3mXNUrwhu23z8P7x+QWbKpfkWV+eMEzyIkpJebRLMIx2aC3QEYWr4sK3tfajxAyKDMzn4Q92QXGuoKjhjlLbhV5CVQVWq3s=
+
+jonh:
+  user_id: 1
+  key: 7Bg5jf/CQfH4WDqk1ehKCWyufnShpQD0HEpgqHMzQshzfHbE8pLe9QkiYaMXpbDSi8l8cfgQIrL9kMAZor1nYMBZa4XAifM/1u2I/7KtrfPsaqxuNjXjjayeDRbTLshHLkdjBLkjfEy7ZwfsnwleXwVa2MaUWtizT9x0jewU4ts=  
+mathew:
+  user_id: 2
+  key: 
+  
+sophia:
+  user_id: 2
+  key: T7mLBexUECU/zF19sK6l902vkEtX175fU6IO+MzTC1NaO+qkEwMo28fVJZvYo4ECVOn0fLYFXHw2vCPuJ9R8+LDyOBBkOhvh0LwE1wQNiW9pnzHRxL+Bjp0L1oJej/Mccpg1Y+k9yWQOUNaqzyoTv5Kt2Zgtag5m3tSCrO67QaU=

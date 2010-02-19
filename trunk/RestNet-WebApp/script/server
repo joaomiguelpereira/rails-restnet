@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+unless ARGV.include?("-p") 
+  ARGV << "-p" 
+  ARGV << "3000"
+end
+unless ARGV.include?("-b") 
+  ARGV << "-b" 
+  ARGV << "0.0.0.0"
+end 
+require File.expand_path('../../config/boot',  __FILE__)
+require 'commands/server'

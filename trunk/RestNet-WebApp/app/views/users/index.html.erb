@@ -1,0 +1,36 @@
+<h1>Utilizadores</h1>
+
+<table>
+  <tr>
+    <th>Primeiro Nome</th>
+    <th>Último Nome</th>
+    <th>Identificador</th>
+  	<th>Email</th>
+	<th>Activo?</th>
+	<th>Criado em</th>
+	<th>Admin?</th>
+	<th>Facebook</th>
+	
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%=h user.first_name%></td>
+    <td><%=h user.last_name%></td>
+	<td><%=h user.handle%></td>
+	<td><%=h user.email%></td>
+	<td><%=h user.active%></td>
+	<td><%=h user.created_at%></td>
+	<td><%=h user.admin%></td>
+	<td><%=h user.fb_uid%></td>
+	
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user', new_user_path %>
