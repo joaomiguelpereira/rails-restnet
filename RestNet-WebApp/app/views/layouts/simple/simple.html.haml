@@ -8,12 +8,33 @@
     = stylesheet_link_tag template_css
 
   %body
-    #header
-    = yield :layout 
-    = keywords
+    #main
+      #header
+        #logo
+          =link_to image_tag('logo_header.png'), root_url
+        #profile-info
+          teste
+      #sub-header
+        #main-menu
+          menu1 menu2 menu3
+        #search-bar
+          seach
+      #main-content
+        #main-left
+          = yield :layout
+        #main-right
+          Right-content 
+      #footer
+        #footer-left
+          menu footer 1 menu footer 2
+        #footer-center
+          center center
+        #footer-right
+          right footer
+      
     
-= javascript_tag "window.api_key = '#{Facebooker.api_key}';"
-= javascript_tag "window.xd_receiver_location = '#{ENV['XD_RECEIVER_LOCATION']}';"
-= javascript_tag "window.facebook_authenticate_location = '#{ENV['FACEBOOK_AUTHENTICATE_LOCATION']}';"
-= javascript_include_tag 'facebook_scripts'
+  = javascript_tag "window.api_key = '#{Facebooker.api_key}';"
+  = javascript_tag "window.xd_receiver_location = '#{ENV['XD_RECEIVER_LOCATION']}';"
+  = javascript_tag "window.facebook_authenticate_location = '#{ENV['FACEBOOK_AUTHENTICATE_LOCATION']}';"
+  = javascript_include_tag 'facebook_scripts'
     
