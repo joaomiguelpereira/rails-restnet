@@ -1,4 +1,8 @@
 defaults: &defaults
+  template: simple
+  images_dir: /templates/simple/images/
+  #Uncomment the following line if you have a URL serving static files (images, CSS)
+  #statics_url: http://someurl.com
   
 
 development:
