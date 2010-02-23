@@ -1,21 +1,32 @@
 module WebappHelper
   
-  #
-  # Generate a list of keywords to insert into the template. Each controller can override it
+  
+  def page_title
+    "some page title"
+  end
   def keywords
-    "Add Logic here to generate the keywords for all app. Override in each controller"
+    "teste keywords"
   end
   
+  def template_css
+    WEBAPP_CONFIG['template_css']
+  end
   def template_name
-    "refresh"
+    WEBAPP_CONFIG['template']
   end
   def statics_url
-    #Assumes the same host and same protocol
-    request.protocol+request.host_with_port
+    #Assumes the same host and same protocol by default
+    #Check webapp_config.yml for the variable statics_url  
+    WEBAPP_CONFIG['statics_url'] || request.protocol+request.host_with_port
+    
   end
+  
+  
   def images_url
-    statics_url+"/templates/#{template_name}/images/"  
+    #check webapp_config.yml for images_dir
+    statics_url+WEBAPP_CONFIG['images_dir']     
   end
+  
   def has_session?
     return true if session[:user_session]
     false
