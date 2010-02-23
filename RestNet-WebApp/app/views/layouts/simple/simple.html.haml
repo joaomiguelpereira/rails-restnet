@@ -10,15 +10,35 @@
   %body
     #main
       #header
-        #logo
-          =link_to image_tag('logo_header.png'), root_url
-        #profile-info
-          teste
+        #header-logo
+          =link_to image_tag('logo_header.png',:border=>'0'), root_url
+        #header-profile
+          .no-profile-menu
+            %ul
+              %li
+                =link_to "Registar", root_url
+              %li 
+                =link_to "Iniciar sessão", root_url
+              %li
+                =link_to "Ajuda", root_url
+        
       #sub-header
         #main-menu
-          menu1 menu2 menu3
+          %ul
+            %li
+              =link_to "Top restaurantes", root_url
+            %li
+              =link_to "Na minha zona", root_url
+            %li
+              =link_to "Menu 1", root_url
+            %li
+              =link_to "Menu 1", root_url
+            %li
+              =link_to "Menu 1", root_url
+            
+
         #search-bar
-          seach
+          %input 
       #main-content
         #main-left
           = yield :layout
