@@ -1,4 +1,5 @@
 -if has_session?
-  = render :partial => "sessions/session_info", :locals=>{:element_id=>"session_info"}
-  = render :partial => "sessions/session_picture", :locals=>{:element_id=>"session_picture"}
+  = render :partial => "sessions/session_picture"
+  #session-info
+    = render :partial => "sessions/session_info"
 = render :partial => "sessions/session_options"
