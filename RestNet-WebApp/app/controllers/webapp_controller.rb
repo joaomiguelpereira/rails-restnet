@@ -3,6 +3,7 @@ class WebappController < ApplicationController
   helper :all # include all helpers, all the time
   include ApplicationHelper
   include WebappHelper
+ 
   
   before_filter :detect_auto_login_cookie
   #Define the base layout. For not hard coded
