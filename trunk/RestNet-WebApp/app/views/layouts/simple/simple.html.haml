@@ -4,23 +4,23 @@
     %meta{'name' => 'keywords', :content => "#{keywords}"}/
     %title== #{page_title}
     = javascript_include_tag :defaults, 'http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php', :cache=>true, :recursive=>true
+    = javascript_tag "window.api_key = '#{Facebooker.api_key}';"
+    = javascript_tag "window.xd_receiver_location = '#{ENV['XD_RECEIVER_LOCATION']}';"
+    = javascript_tag "window.facebook_authenticate_location = '#{ENV['FACEBOOK_AUTHENTICATE_LOCATION']}';"
+    = javascript_include_tag 'facebook_scripts'  
     = yield :javascripts
     = stylesheet_link_tag template_css
-
   %body
     #main
+      .error-flash-box{:style=>'display:none;'}
+        = flash[:error]
+      .notice-flash-box{:style=>'display:none;'}
+        = flash[:notice]
       #header
         #header-logo
           =link_to image_tag('logo_header.png',:border=>'0'), root_url
         #header-profile
-          .no-profile-menu
-            %ul
-              %li
-                =link_to "Registar", root_url
-              %li 
-                =link_to "Iniciar sessão", root_url
-              %li
-                =link_to "Ajuda", root_url
+          = render :partial => "shared/profile_component"
         
       #sub-header
         #main-menu
@@ -43,7 +43,7 @@
         #main-left
           = yield :layout
         #main-right
-          Right-content 
+          = yield :sidebar_hints 
       #footer
         #footer-left
           menu footer 1 menu footer 2
@@ -53,8 +53,4 @@
           right footer
       
     
-  = javascript_tag "window.api_key = '#{Facebooker.api_key}';"
-  = javascript_tag "window.xd_receiver_location = '#{ENV['XD_RECEIVER_LOCATION']}';"
-  = javascript_tag "window.facebook_authenticate_location = '#{ENV['FACEBOOK_AUTHENTICATE_LOCATION']}';"
-  = javascript_include_tag 'facebook_scripts'
-    
+  
