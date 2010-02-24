@@ -1,6 +1,0 @@
-<%if has_session? -%>
-	<span id="<%=element_id = "session_info" unless element_id; element_id%>"><%= user_session.name %></span>
-    <%if user_session.facebook_user -%>
-    	<img id="<%=element_id = "session_info_fb_icon" unless element_id; element_id+"_fb_icon"%>" src="<%=images_url%>/fb_small.gif"/ width="15" height="15">
-	<%end -%>
-<%end -%>
