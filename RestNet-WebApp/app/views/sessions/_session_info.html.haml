@@ -1,0 +1,6 @@
+%span
+  = user_session.name
+  -if user_session.facebook_user
+    =image_tag("fb_small.gif", {:width=>"15", :height=>"15"})
+  -else
+    == (#{user_session.email}) 
