@@ -3,13 +3,14 @@
   %head
     %meta{'name' => 'keywords', :content => "#{keywords}"}/
     %title== #{page_title}
+    = stylesheet_link_tag template_css, :cache=>true
     = javascript_include_tag :defaults, 'http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php', :cache=>true, :recursive=>true
     = javascript_tag "window.api_key = '#{Facebooker.api_key}';"
     = javascript_tag "window.xd_receiver_location = '#{ENV['XD_RECEIVER_LOCATION']}';"
     = javascript_tag "window.facebook_authenticate_location = '#{ENV['FACEBOOK_AUTHENTICATE_LOCATION']}';"
     = javascript_include_tag 'facebook_scripts'  
     = yield :javascripts
-    = stylesheet_link_tag template_css
+    
   %body
     #main
       .error-flash-box{:style=>'display:none;'}
