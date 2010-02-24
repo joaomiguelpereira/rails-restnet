@@ -183,6 +183,25 @@ h3 {
     float: right;
 }
 
+.error-flash-box, .notice-flash-box {
+	position:absolute;
+	top:0;
+	width:987px;
+	height:34px;
+	z-index:9999;
+	background-color:#F7F7F7;
+	font-size:1.7em;
+	padding-top:8px;
+	padding-left:8px;
+	
+}
+.error-flash-box {
+	color:#CC0000;
+}
+.notice-flash-box {
+	color:#6E8D3D;
+}
+
 .clear {
     clear: both;
 }
