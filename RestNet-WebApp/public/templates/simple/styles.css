@@ -32,10 +32,17 @@ h3 {
     height: 89px;
     clear: both;
 }
-
+#header #session-picture {
+	float:right;
+	padding-left:5px;
+}
+#header #session-info {
+	padding:5px;
+}
 #header-logo {
     width: 377px;
     float: left;
+	padding-top:5px;
 }
 
 #header-profile {
@@ -43,18 +50,20 @@ h3 {
     width: 610px;
     float: right;
     text-align: right;
+	padding-top:5px;
 }
 
-.no-profile-menu {
+.session-options {
+
 }
 
-.no-profile-menu ul {
+.session-options ul {
     padding: 0px;
     margin: 0px;
     display: inline;
 }
 
-.no-profile-menu ul li {
+.session-options ul li {
     padding: 0px;
     margin: 0px;
     padding-top: 3px;
@@ -65,14 +74,14 @@ h3 {
    
 }
 
-.no-profile-menu a, .no-profile-menu a:visited {
+.session-options a, .session-options a:visited {
     text-decoration: none;
     color: #0E1F5B;
     padding: 3px 15px;
 	border-left: 1px solid #999999;
 }
 
-.no-profile-menu a:hover {
+.session-options a:hover {
     background-color: #5C75AA;
     color: #fff;
 }
@@ -87,10 +96,6 @@ h3 {
 	padding-top:13px;
     width: 610px;
     float: left;
-	
-	
-	
-	
 }
 
 #main-menu ul {
