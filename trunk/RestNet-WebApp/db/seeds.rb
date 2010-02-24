@@ -13,3 +13,5 @@ user = User.create(:handle=>'admin',
 user.admin = true
 user.active = true
 user.save
+user.handle="admin"
+user.save
